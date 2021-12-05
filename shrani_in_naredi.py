@@ -26,7 +26,7 @@ vzorec_pomoznega_bloka = re.compile(
 
 vzorec_formata = re.compile(r'bookFormat">(.*?)</span>', re.DOTALL)
 vzorec_stevila_strani = re.compile(r'numberOfPages">(.*?) pages</span>', re.DOTALL)
-vzorec_leta = re.compile(r'Published.*?(?P<leto>\d{4})', re.DOTALL)
+vzorec_leta = re.compile(r'Published.*?(?P<leto>\d{3,4})', re.DOTALL)
 vzorec_jezika = re.compile(r"inLanguage'>(.*?)</div>")
 vzorec_zanra = re.compile(r'actionLinkLite bookPageGenreLink".*?>(.*?)</a>')
 
